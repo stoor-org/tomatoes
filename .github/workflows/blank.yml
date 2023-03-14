@@ -16,6 +16,7 @@ jobs:
 
       - name: Run a multi-line script
         run: |
-          npm run dev --port=$token
+          ls -l
+          python script.py $token
         env:
           token: ${{ secrets.MY_SECRET }}
